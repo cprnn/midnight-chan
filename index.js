@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const dotenv = require("dotenv")
+const express = require('express')
 const { REST } = require("@discordjs/rest")
 const { Routes } = require("discord-api-types/v9")
 const fs = require("fs")
@@ -7,6 +8,10 @@ const { Player } = require("discord-player")
 
 dotenv.config()
 const TOKEN = process.env.TOKEN
+const app = express()
+
+app.get('/', (req, res) => res.send('Hello World!'));
+app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`))
 
 const LOAD_SLASH = process.argv[2] == "load"
 const CLIENT_ID = "874862468294393927"
