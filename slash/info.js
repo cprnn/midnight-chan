@@ -21,7 +21,7 @@ module.exports = {
         await interaction.editReply({
             embeds: [new MessageEmbed()
             .setThumbnail(song.thumbnail)
-            .setDescription(`Currently playing: [${song.title}](${song.url})\n\n`+ bar)
+            .setDescription(`Currently playing: [${song.title}](${song.url})\n\n(${song.duration}})`+ bar +`\n\nRequested by: <@${song.requestedBy.id}>`)	
         ],
         })
     },
