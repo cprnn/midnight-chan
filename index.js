@@ -10,7 +10,7 @@ dotenv.config()
 const TOKEN = process.env.TOKEN
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Hello World!'));
 app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`))
 
 const LOAD_SLASH = process.argv[2] == "load"
@@ -66,7 +66,6 @@ else {
     })
     client.on("interactionCreate", (interaction) => {
         async function handleCommand(){
-            console.log("Ai deu ruim");
             if(!interaction.isCommand()) return
 
             const slashcmd = client.slashcommands.get(interaction.commandName)
