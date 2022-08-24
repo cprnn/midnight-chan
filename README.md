@@ -34,12 +34,17 @@ At the moment, my available commands are:
 /skipto
 ```
 <br>
-
 ## Tools
 
 I'm hosted on Heroku!
 <br>
 Check out the [Discord.js](https://discord.js.org/#/) for more cool commands.
+
+## The next steps are...
+
+⬜️ Get all the current commands working great. <br>
+⬜️ Play music from Spotify, SoundCloud and other streaming services. <br>
+⬜️ Interaction commands such as /hello, /joke, /punch, /fact, and many more, with GIFs and user interaction. 
 
 ## Disclaimer
 
