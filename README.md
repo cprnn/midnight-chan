@@ -33,7 +33,7 @@ At the moment, my available commands are:
 /skip
 /skipto
 ```
-<br>
+
 ## Tools
 
 I'm hosted on Heroku!
