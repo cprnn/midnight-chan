@@ -39,7 +39,7 @@ At the moment, my available commands are:
 
 I'm hosted on Heroku!
 <br>
-Check out the [Discord.js](https://discord.js.org/#/)
+Check out the [Discord.js](https://discord.js.org/#/) for more cool commands.
 
 ## Disclaimer
 
