@@ -9,6 +9,8 @@ I'm a Discord bot inspired by Nemuri Kayama, AKA Midnight! I'm developed using J
 ## Installation
 
 ```
+For using this code, you'll need to install this dependencies:
+
 npm install ffmpeg
 npm install discord.js //Node.js 16.9.0 or newer is required.
 npm install discord-player
