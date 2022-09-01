@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require("@discordjs//builders")
+const { SlashCommandBuilder } = require("@discordjs/builders")
 const { MessageEmbed } = require("discord.js")
 const { QueryType } = require("discord-player")
 
@@ -22,6 +22,7 @@ module.exports = {
                 .addStringOption((option) => option.setName("searchtems").setDescription("The search keywords").setRequired(true))
         ),
     run: async ({ client, interaction }) => {
+        console.log(interaction)
         if (!interaction.member.voice.channel)
             return interaction.editReply("You must be in a voice channel to use this command!")
 
@@ -37,6 +38,7 @@ module.exports = {
                 requestedBy: interaction.user,
                 searchEngine: QueryType.YOUTUBE_VIDEO
             })
+            
             if (result.tracks.length === 0)
                 return interaction.editReply("No results found!")
 

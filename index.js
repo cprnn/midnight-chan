@@ -11,7 +11,7 @@ const TOKEN = process.env.TOKEN
 const app = express()
 
 app.get('/', (req, res) => res.send('Hello World!'));
-app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`))
+app.listen(process.env.PORT, () => console.log(`Listening on port ${process.env.PORT}!`))
 
 const LOAD_SLASH = process.argv[2] == "load"
 const CLIENT_ID = "874862468294393927"
@@ -20,7 +20,8 @@ const GUILD_ID = "819010906280165417"
 const client = new Discord.Client({
     intents:[
         "GUILDS",
-        "GUILD_VOICE_STATES"
+        "GUILD_VOICE_STATES",
+        "GUILD_MESSAGES"
     ]
 })
 
